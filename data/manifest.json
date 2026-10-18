@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "retrievedAt": "2026-10-16",
+  "site": "Mercer County Park public recreation grounds",
+  "centerWGS84Approx": [
+    -74.6475,
+    40.26515
+  ],
+  "projectedCRS": "EPSG:32618",
+  "boundsM": [
+    529716.6749304753,
+    4456991.405799901,
+    530228.6749304753,
+    4457503.405799901
+  ],
+  "projectionService": "https://utility.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer/project",
+  "terrain": {
+    "url": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=529716.6749304753%2C4456991.405799901%2C530228.6749304753%2C4457503.405799901&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+    "service": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer",
+    "item": "c29ab646471d440f83843b704e811207",
+    "sourceHorizontalCRS": "EPSG:6527 NAD83(2011) / New Jersey (ftUS)",
+    "sourceVerticalCRS": "EPSG:6360 NAVD88 height (ftUS)",
+    "conversionMPerFtUS": 0.3048006096012192,
+    "collection": "statewide composite of 2014\u20132019 collections; Mercer regional collection DVRPC 2015",
+    "acquisitionDates": "Exact per-pixel collection date not returned by composite service",
+    "nativePixelSizeFtUS": 10,
+    "outputPixelSizeM": 4,
+    "resampling": "ArcGIS bilinear to UTM 18N; no vertical transformation; explicit elevation scaling",
+    "nodata": "nonfinite / outside [-1000,15000] ft -> mask=0, z=0; masked faces closed",
+    "validCells": 16384,
+    "conditioning": "none"
+  },
+  "imagery": {
+    "url": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=529716.6749304753%2C4456991.405799901%2C530228.6749304753%2C4457503.405799901&bboxSR=32618&imageSR=32618&f=image&size=1024%2C1024&format=jpg&transparent=false",
+    "service": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer",
+    "year": 2015,
+    "use": "reference only; not surface classification ground truth"
+  },
+  "license": {
+    "attribution": "NJOGIS / NJDEP; NJ 2015 imagery partners",
+    "source": "https://www.nj.gov/njgin/edata/elevation/",
+    "terms": "https://www.nj.gov/nj/legal.html",
+    "limitations": "Not survey data; supplied as is; attribution requested. Full source terms retained in nj-dem-item.json."
+  },
+  "files": {
+    "data/raw/park-dem-512m.tiff": "90dbf22c6446e8161ada56f6fa62a78c21e1f52e8e83d30ac546fc19e3b173d9",
+    "data/raw/nj-dem-item.json": "4cf9a495171e3dea014fd2dd72b3b97cef319b50384aa2d5d7ffb8c07bd17ffc",
+    "data/raw/nj-dem-service.json": "0db99221aa11d1ba73ecdd52e1a3acc4acf8831d93668e09f2b96028d318983b",
+    "data/raw/park-dem-384m-2m.tiff": "8eeaf4887715ff21549b5307646ad2c88a27f3bd33552aab48e77dea3afeae18",
+    "data/raw/nj-dem-metadata.xml": "a21a25d4869ffa45d3de418e7c8e33f114c229cef9321bc0e0470f8778ba95b4",
+    "data/raw/nj-imagery-service.json": "d1e0c1680830470e96a7894e995bd047c2c1aa01390beeb6670728d9aeced704",
+    "data/raw/park-2015-512m.jpg": "179f718636186f75f711c619a94bcf67ff4226983c47308998a08ca4c67b4a52",
+    "data/raw/nj-services.json": "47eaa50ca957e0b31d8633eb04f3119130e73ba019c68cabafdad13a21f4d2a7",
+    "public/data/park-expanded.json": "1496386bd6da7cb41bf2059cd77b1fc545fdbbc0ca25fda7a9ae4df5d3b68425",
+    "public/data/manifest.json": "d57f43daf99630c98b5ebc98b68110ba05fbe1db894eb5528f4f3b696db7a3c9",
+    "public/data/park-domain.json": "925047197a2fc525462794464e1709e8e30119aa042173458612bdea952285de",
+    "public/data/park.json": "d85541cab99a76a776ab73cb4df61e827d3168c9d4bb9da03a2be89b748b797d",
+    "public/data/park-domain-aerial.jpg": "1531ae787ff9fb62601258bf1fd17ff542e9cde5e38f76e45949e23a051bf1bb",
+    "public/data/park-aerial.jpg": "a37a7a6c4ea33e8b2990eaf23125ea9eed0622e5b4e5e43a7485d1007976da0b"
+  },
+  "limitations": [
+    "No verified drains, curbs, culverts, roof routing, or field infiltration.",
+    "Uniform hypothetical surface parameters; no pavement-level classification claimed.",
+    "The 384 m computational domain is chosen from measured domain-size tests, not a surveyed catchment boundary.",
+    "Hydro-flattened lake cells are treated as a fixed-level open sink; lake level change is not modelled.",
+    "UTM uses WGS84; source NAD83(2011) transformation selected by ArcGIS default, not survey grade."
+  ]
+}
