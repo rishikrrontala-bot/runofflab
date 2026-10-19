@@ -1,0 +1,24 @@
+node_modules/
+dist/
+dist-public/
+.env*
+!.env.example
+test-results/
+playwright-report/
+.DS_Store
+.venv/
+models/checkpoints/
+models/base/
+models/cache/
+*.log
+.impeccable/*.lock
+
+# Optional regenerated data and provider artifacts are not part of the source export.
+models/data/cases*/
+models/data/v2/
+models/data/*.jsonl
+models/runs/
+models/spend.jsonl
+evidence/llm-cache/
+data/raw/
+scripts/__pycache__/

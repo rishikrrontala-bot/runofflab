@@ -1,0 +1,1287 @@
+{
+  "generatedAt": "2026-10-18T07:40:16.035Z",
+  "split": "heldout",
+  "cases": 420,
+  "baselineSource": "heldout-adaption-qwen35-4b-e6",
+  "baselines": {
+    "none": {
+      "validity": 1,
+      "firstPassValidity": 1,
+      "coverage": 1,
+      "infraFailures": 0,
+      "casesWithRoomToImprove": 415,
+      "meanCapturedImprovement": 0,
+      "capturedImprovementCI95": [
+        0,
+        0
+      ],
+      "real": 0,
+      "synthetic": 0,
+      "exactMatch": 0.007,
+      "worseThanNoGardens": 0,
+      "meanRelativeReduction": 0,
+      "solverCallsPerCase": 1,
+      "meanEndToEndSeconds": 0,
+      "repairRequests": 0,
+      "truncatedAttempts": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "costUsd": 0,
+      "invalidReasons": []
+    },
+    "random": {
+      "validity": 1,
+      "firstPassValidity": 1,
+      "coverage": 1,
+      "infraFailures": 0,
+      "casesWithRoomToImprove": 415,
+      "meanCapturedImprovement": 0.199,
+      "capturedImprovementCI95": [
+        0.148,
+        0.252
+      ],
+      "real": 0.163,
+      "synthetic": 0.248,
+      "exactMatch": 0.01,
+      "worseThanNoGardens": 4,
+      "meanRelativeReduction": 0.02,
+      "solverCallsPerCase": 1,
+      "meanEndToEndSeconds": 0.056,
+      "repairRequests": 0,
+      "truncatedAttempts": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "costUsd": 0,
+      "invalidReasons": []
+    },
+    "heuristic": {
+      "validity": 1,
+      "firstPassValidity": 1,
+      "coverage": 1,
+      "infraFailures": 0,
+      "casesWithRoomToImprove": 415,
+      "meanCapturedImprovement": 0.567,
+      "capturedImprovementCI95": [
+        0.525,
+        0.608
+      ],
+      "real": 0.572,
+      "synthetic": 0.561,
+      "exactMatch": 0.164,
+      "worseThanNoGardens": 1,
+      "meanRelativeReduction": 0.07,
+      "solverCallsPerCase": 1,
+      "meanEndToEndSeconds": 0.022,
+      "repairRequests": 0,
+      "truncatedAttempts": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "costUsd": 0,
+      "invalidReasons": []
+    },
+    "greedy": {
+      "validity": 1,
+      "firstPassValidity": 1,
+      "coverage": 1,
+      "infraFailures": 0,
+      "casesWithRoomToImprove": 415,
+      "meanCapturedImprovement": 0.993,
+      "capturedImprovementCI95": [
+        0.99,
+        0.996
+      ],
+      "real": 0.994,
+      "synthetic": 0.992,
+      "exactMatch": 0.912,
+      "worseThanNoGardens": 0,
+      "meanRelativeReduction": 0.095,
+      "solverCallsPerCase": 55.474,
+      "meanEndToEndSeconds": 0,
+      "repairRequests": 0,
+      "truncatedAttempts": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "costUsd": 0,
+      "invalidReasons": []
+    }
+  },
+  "runs": [
+    {
+      "tag": "heldout-adaption-qwen35-4b-e6",
+      "label": "Adaption Qwen3.5-4B, 6 epochs (selected)",
+      "role": "primary",
+      "trained": true,
+      "report": "evidence/planner-eval/v2-heldout-heldout-adaption-qwen35-4b-e6.json",
+      "generation": {
+        "requested": {
+          "maxTokens": 256,
+          "thinking": "default",
+          "concurrency": 1,
+          "temperature": 0
+        },
+        "effective": {
+          "model": "Qwen/Qwen3.5-4B",
+          "method": "trained-adaption",
+          "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+          "trainingRows": 4000,
+          "trainingSha256": "b3a72d485b2f079113a8693f6ba1e5f8442dd1098c0192078b371a116aa670de",
+          "adaptionRun": "596d3089-189e-4c0f-a693-cfd922c422c0",
+          "generation": {
+            "thinking": "off (enable_thinking=False in the chat template)",
+            "maxTokens": 96,
+            "temperature": 0,
+            "sampler": "greedy (temp 0)",
+            "template": "tokenizer chat template; one user message with the prompt; add_generation_prompt"
+          }
+        }
+      },
+      "spentUsd": 0,
+      "infraRetried": 0,
+      "model": {
+        "validity": 1,
+        "firstPassValidity": 1,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.618,
+        "capturedImprovementCI95": [
+          0.574,
+          0.675
+        ],
+        "real": 0.646,
+        "synthetic": 0.581,
+        "exactMatch": 0.181,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.065,
+        "solverCallsPerCase": 1,
+        "meanEndToEndSeconds": 2.955,
+        "repairRequests": 0,
+        "truncatedAttempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 5240,
+        "costUsd": 0,
+        "invalidReasons": []
+      },
+      "bestOfTwo": {
+        "validity": 1,
+        "firstPassValidity": 1,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.693,
+        "capturedImprovementCI95": [
+          0.652,
+          0.734
+        ],
+        "real": 0.727,
+        "synthetic": 0.649,
+        "exactMatch": 0.248,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.076,
+        "solverCallsPerCase": 2,
+        "meanEndToEndSeconds": 2.977,
+        "repairRequests": 0,
+        "truncatedAttempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "costUsd": 0,
+        "invalidReasons": []
+      },
+      "paired": {
+        "model": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": false,
+            "meanCapturedDifference": 0.051,
+            "capturedDifferenceCI95": [
+              -0.009,
+              0.141
+            ],
+            "meanObjectiveDifferenceM3": 0.096,
+            "meanRelativeReductionDifference": -0.004
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.375,
+            "capturedDifferenceCI95": [
+              -0.418,
+              -0.32
+            ],
+            "meanObjectiveDifferenceM3": 1.337,
+            "meanRelativeReductionDifference": -0.03
+          }
+        },
+        "bestOfTwo": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": true,
+            "modelWorse": false,
+            "meanCapturedDifference": 0.126,
+            "capturedDifferenceCI95": [
+              0.079,
+              0.191
+            ],
+            "meanObjectiveDifferenceM3": -0.326,
+            "meanRelativeReductionDifference": 0.006
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.3,
+            "capturedDifferenceCI95": [
+              -0.34,
+              -0.261
+            ],
+            "meanObjectiveDifferenceM3": 0.916,
+            "meanRelativeReductionDifference": -0.019
+          }
+        }
+      }
+    },
+    {
+      "tag": "heldout-adaption-qwen35-4b-b8",
+      "label": "Adaption Qwen3.5-4B, 3 epochs",
+      "role": "secondary",
+      "trained": true,
+      "report": "evidence/planner-eval/v2-heldout-heldout-adaption-qwen35-4b-b8.json",
+      "generation": {
+        "requested": {
+          "maxTokens": 256,
+          "thinking": "default",
+          "concurrency": 1,
+          "temperature": 0
+        },
+        "effective": {
+          "model": "Qwen/Qwen3.5-4B",
+          "method": "trained-adaption",
+          "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-b8",
+          "trainingRows": 4000,
+          "trainingSha256": "b3a72d485b2f079113a8693f6ba1e5f8442dd1098c0192078b371a116aa670de",
+          "adaptionRun": "36d41213-8c4b-490e-98b0-648de68cfd61",
+          "generation": {
+            "thinking": "off (enable_thinking=False in the chat template)",
+            "maxTokens": 96,
+            "temperature": 0,
+            "sampler": "greedy (temp 0)",
+            "template": "tokenizer chat template; one user message with the prompt; add_generation_prompt"
+          }
+        }
+      },
+      "spentUsd": 0,
+      "infraRetried": 0,
+      "model": {
+        "validity": 1,
+        "firstPassValidity": 1,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.611,
+        "capturedImprovementCI95": [
+          0.571,
+          0.655
+        ],
+        "real": 0.632,
+        "synthetic": 0.584,
+        "exactMatch": 0.167,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.067,
+        "solverCallsPerCase": 1,
+        "meanEndToEndSeconds": 2.946,
+        "repairRequests": 0,
+        "truncatedAttempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 5287,
+        "costUsd": 0,
+        "invalidReasons": []
+      },
+      "bestOfTwo": {
+        "validity": 1,
+        "firstPassValidity": 1,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.683,
+        "capturedImprovementCI95": [
+          0.647,
+          0.722
+        ],
+        "real": 0.706,
+        "synthetic": 0.651,
+        "exactMatch": 0.238,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.075,
+        "solverCallsPerCase": 2,
+        "meanEndToEndSeconds": 2.967,
+        "repairRequests": 0,
+        "truncatedAttempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "costUsd": 0,
+        "invalidReasons": []
+      },
+      "paired": {
+        "model": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": false,
+            "meanCapturedDifference": 0.045,
+            "capturedDifferenceCI95": [
+              -0.005,
+              0.111
+            ],
+            "meanObjectiveDifferenceM3": 0.085,
+            "meanRelativeReductionDifference": -0.003
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.382,
+            "capturedDifferenceCI95": [
+              -0.42,
+              -0.339
+            ],
+            "meanObjectiveDifferenceM3": 1.326,
+            "meanRelativeReductionDifference": -0.028
+          }
+        },
+        "bestOfTwo": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": true,
+            "modelWorse": false,
+            "meanCapturedDifference": 0.116,
+            "capturedDifferenceCI95": [
+              0.071,
+              0.173
+            ],
+            "meanObjectiveDifferenceM3": -0.292,
+            "meanRelativeReductionDifference": 0.005
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.311,
+            "capturedDifferenceCI95": [
+              -0.345,
+              -0.274
+            ],
+            "meanObjectiveDifferenceM3": 0.95,
+            "meanRelativeReductionDifference": -0.02
+          }
+        }
+      }
+    },
+    {
+      "tag": "heldout-adaption-qwen35-9b-q8",
+      "label": "Adaption Qwen3.5-9B, MLX 8-bit",
+      "role": "secondary",
+      "trained": true,
+      "report": "evidence/planner-eval/v2-heldout-heldout-adaption-qwen35-9b-q8.json",
+      "generation": {
+        "requested": {
+          "maxTokens": 256,
+          "thinking": "default",
+          "concurrency": 1,
+          "temperature": 0
+        },
+        "effective": {
+          "model": "Qwen/Qwen3.5-9B",
+          "method": "trained-adaption",
+          "checkpoint": "models/checkpoints/merged-v2-qwen35-9b-retry-q8",
+          "trainingRows": 4000,
+          "trainingSha256": "b3a72d485b2f079113a8693f6ba1e5f8442dd1098c0192078b371a116aa670de",
+          "adaptionRun": "680fa48f-ea4e-4a5b-a431-16198176b3cd",
+          "generation": {
+            "thinking": "off (enable_thinking=False in the chat template)",
+            "maxTokens": 96,
+            "temperature": 0,
+            "sampler": "greedy (temp 0)",
+            "template": "tokenizer chat template; one user message with the prompt; add_generation_prompt"
+          }
+        }
+      },
+      "spentUsd": 0,
+      "infraRetried": 0,
+      "model": {
+        "validity": 0.998,
+        "firstPassValidity": 0.998,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.584,
+        "capturedImprovementCI95": [
+          0.548,
+          0.628
+        ],
+        "real": 0.611,
+        "synthetic": 0.549,
+        "exactMatch": 0.14,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.063,
+        "solverCallsPerCase": 0.998,
+        "meanEndToEndSeconds": 4.904,
+        "repairRequests": 1,
+        "truncatedAttempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 5321,
+        "costUsd": 0,
+        "invalidReasons": [
+          [
+            "Unknown candidate: G29",
+            1
+          ]
+        ]
+      },
+      "bestOfTwo": {
+        "validity": 1,
+        "firstPassValidity": 0.998,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.674,
+        "capturedImprovementCI95": [
+          0.64,
+          0.706
+        ],
+        "real": 0.7,
+        "synthetic": 0.64,
+        "exactMatch": 0.229,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.075,
+        "solverCallsPerCase": 2,
+        "meanEndToEndSeconds": 4.925,
+        "repairRequests": 0,
+        "truncatedAttempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "costUsd": 0,
+        "invalidReasons": []
+      },
+      "paired": {
+        "model": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": false,
+            "meanCapturedDifference": 0.017,
+            "capturedDifferenceCI95": [
+              -0.03,
+              0.089
+            ],
+            "meanObjectiveDifferenceM3": 0.259,
+            "meanRelativeReductionDifference": -0.006
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.409,
+            "capturedDifferenceCI95": [
+              -0.443,
+              -0.366
+            ],
+            "meanObjectiveDifferenceM3": 1.5,
+            "meanRelativeReductionDifference": -0.032
+          }
+        },
+        "bestOfTwo": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": true,
+            "modelWorse": false,
+            "meanCapturedDifference": 0.107,
+            "capturedDifferenceCI95": [
+              0.075,
+              0.153
+            ],
+            "meanObjectiveDifferenceM3": -0.275,
+            "meanRelativeReductionDifference": 0.006
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.319,
+            "capturedDifferenceCI95": [
+              -0.351,
+              -0.287
+            ],
+            "meanObjectiveDifferenceM3": 0.966,
+            "meanRelativeReductionDifference": -0.02
+          }
+        }
+      }
+    },
+    {
+      "tag": "heldout-local-qwen35-08b",
+      "label": "Local Qwen3.5-0.8B (MLX LoRA)",
+      "role": "secondary",
+      "trained": true,
+      "report": "evidence/planner-eval/v2-heldout-heldout-local-qwen35-08b.json",
+      "generation": {
+        "requested": {
+          "maxTokens": 256,
+          "thinking": "default",
+          "concurrency": 1,
+          "temperature": 0
+        },
+        "effective": {
+          "model": "Qwen/Qwen3.5-0.8B",
+          "method": "trained-local",
+          "checkpoint": "models/checkpoints/local-v2-08b",
+          "trainingRows": 4000,
+          "trainingSha256": "b3a72d485b2f079113a8693f6ba1e5f8442dd1098c0192078b371a116aa670de",
+          "generation": {
+            "thinking": "off (enable_thinking=False in the chat template)",
+            "maxTokens": 96,
+            "temperature": 0,
+            "sampler": "greedy (temp 0)",
+            "template": "tokenizer chat template; one user message with the prompt; add_generation_prompt"
+          }
+        }
+      },
+      "spentUsd": 0,
+      "infraRetried": 0,
+      "model": {
+        "validity": 0.983,
+        "firstPassValidity": 0.979,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.28,
+        "capturedImprovementCI95": [
+          0.238,
+          0.314
+        ],
+        "real": 0.253,
+        "synthetic": 0.315,
+        "exactMatch": 0.029,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.029,
+        "solverCallsPerCase": 0.983,
+        "meanEndToEndSeconds": 0.669,
+        "repairRequests": 9,
+        "truncatedAttempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 5664,
+        "costUsd": 0,
+        "invalidReasons": [
+          [
+            "Unknown candidate: G27",
+            2
+          ],
+          [
+            "Unknown candidate: G23",
+            3
+          ],
+          [
+            "Unknown candidate: G10",
+            1
+          ],
+          [
+            "Unknown candidate: G20",
+            1
+          ]
+        ]
+      },
+      "bestOfTwo": {
+        "validity": 1,
+        "firstPassValidity": 0.979,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.631,
+        "capturedImprovementCI95": [
+          0.596,
+          0.664
+        ],
+        "real": 0.634,
+        "synthetic": 0.628,
+        "exactMatch": 0.176,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.073,
+        "solverCallsPerCase": 2,
+        "meanEndToEndSeconds": 0.69,
+        "repairRequests": 0,
+        "truncatedAttempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "costUsd": 0,
+        "invalidReasons": []
+      },
+      "paired": {
+        "model": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.287,
+            "capturedDifferenceCI95": [
+              -0.343,
+              -0.241
+            ],
+            "meanObjectiveDifferenceM3": 1.831,
+            "meanRelativeReductionDifference": -0.042
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.713,
+            "capturedDifferenceCI95": [
+              -0.755,
+              -0.679
+            ],
+            "meanObjectiveDifferenceM3": 3.072,
+            "meanRelativeReductionDifference": -0.067
+          }
+        },
+        "bestOfTwo": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": true,
+            "modelWorse": false,
+            "meanCapturedDifference": 0.064,
+            "capturedDifferenceCI95": [
+              0.051,
+              0.079
+            ],
+            "meanObjectiveDifferenceM3": -0.147,
+            "meanRelativeReductionDifference": 0.003
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.362,
+            "capturedDifferenceCI95": [
+              -0.398,
+              -0.328
+            ],
+            "meanObjectiveDifferenceM3": 1.094,
+            "meanRelativeReductionDifference": -0.022
+          }
+        }
+      }
+    },
+    {
+      "tag": "heldout-deepseek-v32",
+      "label": "Untuned DeepSeek-V3.2",
+      "role": "comparator",
+      "trained": false,
+      "report": "evidence/planner-eval/v2-heldout-heldout-deepseek-v32.json",
+      "generation": {
+        "requested": {
+          "maxTokens": 256,
+          "thinking": "default",
+          "concurrency": 4,
+          "temperature": 0
+        },
+        "effective": {
+          "maxTokens": 256,
+          "thinking": "provider default",
+          "temperature": 0
+        }
+      },
+      "spentUsd": 0.154,
+      "infraRetried": 0,
+      "model": {
+        "validity": 0.867,
+        "firstPassValidity": 0.81,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.355,
+        "capturedImprovementCI95": [
+          0.321,
+          0.386
+        ],
+        "real": 0.344,
+        "synthetic": 0.371,
+        "exactMatch": 0.09,
+        "worseThanNoGardens": 2,
+        "meanRelativeReduction": 0.054,
+        "solverCallsPerCase": 0.867,
+        "meanEndToEndSeconds": 5.759,
+        "repairRequests": 80,
+        "truncatedAttempts": 0,
+        "inputTokens": 572465,
+        "outputTokens": 7113,
+        "costUsd": 0.154,
+        "invalidReasons": [
+          [
+            "Treated area exceeds budget",
+            56
+          ]
+        ]
+      },
+      "bestOfTwo": {
+        "validity": 1,
+        "firstPassValidity": 0.81,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.579,
+        "capturedImprovementCI95": [
+          0.542,
+          0.614
+        ],
+        "real": 0.584,
+        "synthetic": 0.572,
+        "exactMatch": 0.179,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.071,
+        "solverCallsPerCase": 2,
+        "meanEndToEndSeconds": 5.777,
+        "repairRequests": 0,
+        "truncatedAttempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "costUsd": 0,
+        "invalidReasons": []
+      },
+      "paired": {
+        "model": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.211,
+            "capturedDifferenceCI95": [
+              -0.246,
+              -0.185
+            ],
+            "meanObjectiveDifferenceM3": 0.674,
+            "meanRelativeReductionDifference": -0.016
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.638,
+            "capturedDifferenceCI95": [
+              -0.672,
+              -0.608
+            ],
+            "meanObjectiveDifferenceM3": 1.915,
+            "meanRelativeReductionDifference": -0.041
+          }
+        },
+        "bestOfTwo": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": true,
+            "modelWorse": false,
+            "meanCapturedDifference": 0.012,
+            "capturedDifferenceCI95": [
+              0.006,
+              0.017
+            ],
+            "meanObjectiveDifferenceM3": -0.075,
+            "meanRelativeReductionDifference": 0.002
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.414,
+            "capturedDifferenceCI95": [
+              -0.451,
+              -0.378
+            ],
+            "meanObjectiveDifferenceM3": 1.166,
+            "meanRelativeReductionDifference": -0.024
+          }
+        }
+      }
+    },
+    {
+      "tag": "heldout-thinkoff-Qwen_Qwen3.5-397B-A17B",
+      "label": "Untuned Qwen3.5-397B-A17B, thinking off",
+      "role": "comparator",
+      "trained": false,
+      "report": "evidence/planner-eval/v2-heldout-heldout-thinkoff-Qwen_Qwen3.5-397B-A17B.json",
+      "generation": {
+        "requested": {
+          "maxTokens": 256,
+          "thinking": "off",
+          "concurrency": 4,
+          "temperature": 0
+        },
+        "effective": {
+          "maxTokens": 256,
+          "thinking": "requested off (backend may ignore; see truncatedAttempts)",
+          "temperature": 0
+        }
+      },
+      "spentUsd": 0.408,
+      "infraRetried": 0,
+      "model": {
+        "validity": 0.917,
+        "firstPassValidity": 0.843,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.457,
+        "capturedImprovementCI95": [
+          0.422,
+          0.491
+        ],
+        "real": 0.479,
+        "synthetic": 0.429,
+        "exactMatch": 0.102,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.061,
+        "solverCallsPerCase": 0.917,
+        "meanEndToEndSeconds": 2.083,
+        "repairRequests": 66,
+        "truncatedAttempts": 0,
+        "inputTokens": 700745,
+        "outputTokens": 6369,
+        "costUsd": 0.408,
+        "invalidReasons": [
+          [
+            "Treated area exceeds budget",
+            35
+          ]
+        ]
+      },
+      "bestOfTwo": {
+        "validity": 1,
+        "firstPassValidity": 0.843,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.574,
+        "capturedImprovementCI95": [
+          0.531,
+          0.616
+        ],
+        "real": 0.581,
+        "synthetic": 0.565,
+        "exactMatch": 0.176,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.07,
+        "solverCallsPerCase": 2,
+        "meanEndToEndSeconds": 2.101,
+        "repairRequests": 0,
+        "truncatedAttempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "costUsd": 0,
+        "invalidReasons": []
+      },
+      "paired": {
+        "model": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.109,
+            "capturedDifferenceCI95": [
+              -0.133,
+              -0.087
+            ],
+            "meanObjectiveDifferenceM3": 0.362,
+            "meanRelativeReductionDifference": -0.009
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.536,
+            "capturedDifferenceCI95": [
+              -0.569,
+              -0.501
+            ],
+            "meanObjectiveDifferenceM3": 1.603,
+            "meanRelativeReductionDifference": -0.034
+          }
+        },
+        "bestOfTwo": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": true,
+            "modelWorse": false,
+            "meanCapturedDifference": 0.007,
+            "capturedDifferenceCI95": [
+              0.004,
+              0.01
+            ],
+            "meanObjectiveDifferenceM3": -0.038,
+            "meanRelativeReductionDifference": 0.001
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.419,
+            "capturedDifferenceCI95": [
+              -0.461,
+              -0.377
+            ],
+            "meanObjectiveDifferenceM3": 1.203,
+            "meanRelativeReductionDifference": -0.025
+          }
+        }
+      }
+    },
+    {
+      "tag": "heldout-thinkoff-Qwen_Qwen3.5-9B",
+      "label": "Untuned Qwen3.5-9B, thinking off",
+      "role": "comparator",
+      "trained": false,
+      "report": "evidence/planner-eval/v2-heldout-heldout-thinkoff-Qwen_Qwen3.5-9B.json",
+      "generation": {
+        "requested": {
+          "maxTokens": 256,
+          "thinking": "off",
+          "concurrency": 4,
+          "temperature": 0
+        },
+        "effective": {
+          "maxTokens": 256,
+          "thinking": "requested off (backend may ignore; see truncatedAttempts)",
+          "temperature": 0
+        }
+      },
+      "spentUsd": 0.155,
+      "infraRetried": 0,
+      "model": {
+        "validity": 0.693,
+        "firstPassValidity": 0.517,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.345,
+        "capturedImprovementCI95": [
+          0.305,
+          0.38
+        ],
+        "real": 0.352,
+        "synthetic": 0.334,
+        "exactMatch": 0.083,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.044,
+        "solverCallsPerCase": 0.693,
+        "meanEndToEndSeconds": 2.763,
+        "repairRequests": 203,
+        "truncatedAttempts": 0,
+        "inputTokens": 897464,
+        "outputTokens": 10036,
+        "costUsd": 0.155,
+        "invalidReasons": [
+          [
+            "Treated area exceeds budget",
+            86
+          ],
+          [
+            "Invalid or duplicate candidate IDs",
+            43
+          ]
+        ]
+      },
+      "bestOfTwo": {
+        "validity": 1,
+        "firstPassValidity": 0.517,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.602,
+        "capturedImprovementCI95": [
+          0.56,
+          0.64
+        ],
+        "real": 0.608,
+        "synthetic": 0.594,
+        "exactMatch": 0.179,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.072,
+        "solverCallsPerCase": 2,
+        "meanEndToEndSeconds": 2.781,
+        "repairRequests": 0,
+        "truncatedAttempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "costUsd": 0,
+        "invalidReasons": []
+      },
+      "paired": {
+        "model": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.222,
+            "capturedDifferenceCI95": [
+              -0.245,
+              -0.201
+            ],
+            "meanObjectiveDifferenceM3": 1.167,
+            "meanRelativeReductionDifference": -0.026
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.649,
+            "capturedDifferenceCI95": [
+              -0.686,
+              -0.614
+            ],
+            "meanObjectiveDifferenceM3": 2.408,
+            "meanRelativeReductionDifference": -0.052
+          }
+        },
+        "bestOfTwo": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": true,
+            "modelWorse": false,
+            "meanCapturedDifference": 0.035,
+            "capturedDifferenceCI95": [
+              0.021,
+              0.05
+            ],
+            "meanObjectiveDifferenceM3": -0.173,
+            "meanRelativeReductionDifference": 0.002
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.391,
+            "capturedDifferenceCI95": [
+              -0.43,
+              -0.354
+            ],
+            "meanObjectiveDifferenceM3": 1.068,
+            "meanRelativeReductionDifference": -0.023
+          }
+        }
+      }
+    },
+    {
+      "tag": "heldout-thinkoff-Qwen_Qwen3.5-4B",
+      "label": "Untuned Qwen3.5-4B, thinking off",
+      "role": "comparator",
+      "trained": false,
+      "report": "evidence/planner-eval/v2-heldout-heldout-thinkoff-Qwen_Qwen3.5-4B.json",
+      "generation": {
+        "requested": {
+          "maxTokens": 256,
+          "thinking": "off",
+          "concurrency": 4,
+          "temperature": 0
+        },
+        "effective": {
+          "maxTokens": 256,
+          "thinking": "requested off (backend may ignore; see truncatedAttempts)",
+          "temperature": 0
+        }
+      },
+      "spentUsd": 0.079,
+      "infraRetried": 0,
+      "model": {
+        "validity": 0.779,
+        "firstPassValidity": 0.721,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.285,
+        "capturedImprovementCI95": [
+          0.246,
+          0.321
+        ],
+        "real": 0.27,
+        "synthetic": 0.305,
+        "exactMatch": 0.062,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.038,
+        "solverCallsPerCase": 0.779,
+        "meanEndToEndSeconds": 3.274,
+        "repairRequests": 117,
+        "truncatedAttempts": 0,
+        "inputTokens": 775275,
+        "outputTokens": 7146,
+        "costUsd": 0.079,
+        "invalidReasons": [
+          [
+            "Treated area exceeds budget",
+            56
+          ],
+          [
+            "Invalid or duplicate candidate IDs",
+            29
+          ],
+          [
+            "Response was not a bare JSON object",
+            6
+          ],
+          [
+            "Expected exactly selected_patch_ids",
+            2
+          ]
+        ]
+      },
+      "bestOfTwo": {
+        "validity": 1,
+        "firstPassValidity": 0.721,
+        "coverage": 1,
+        "infraFailures": 0,
+        "casesWithRoomToImprove": 415,
+        "meanCapturedImprovement": 0.586,
+        "capturedImprovementCI95": [
+          0.544,
+          0.628
+        ],
+        "real": 0.587,
+        "synthetic": 0.585,
+        "exactMatch": 0.181,
+        "worseThanNoGardens": 1,
+        "meanRelativeReduction": 0.071,
+        "solverCallsPerCase": 2,
+        "meanEndToEndSeconds": 3.291,
+        "repairRequests": 0,
+        "truncatedAttempts": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "costUsd": 0,
+        "invalidReasons": []
+      },
+      "paired": {
+        "model": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.282,
+            "capturedDifferenceCI95": [
+              -0.321,
+              -0.257
+            ],
+            "meanObjectiveDifferenceM3": 1.301,
+            "meanRelativeReductionDifference": -0.032
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.708,
+            "capturedDifferenceCI95": [
+              -0.745,
+              -0.674
+            ],
+            "meanObjectiveDifferenceM3": 2.543,
+            "meanRelativeReductionDifference": -0.058
+          }
+        },
+        "bestOfTwo": {
+          "heuristic": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": true,
+            "modelWorse": false,
+            "meanCapturedDifference": 0.02,
+            "capturedDifferenceCI95": [
+              0.013,
+              0.026
+            ],
+            "meanObjectiveDifferenceM3": -0.107,
+            "meanRelativeReductionDifference": 0.002
+          },
+          "greedy": {
+            "pairedCases": 415,
+            "families": 7,
+            "comparisonStatus": "complete",
+            "modelBetter": false,
+            "modelWorse": true,
+            "meanCapturedDifference": -0.407,
+            "capturedDifferenceCI95": [
+              -0.449,
+              -0.366
+            ],
+            "meanObjectiveDifferenceM3": 1.135,
+            "meanRelativeReductionDifference": -0.024
+          }
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Captured improvement = (none - planner) / (none - search label) over the cases where the label improves on no gardens; invalid answers count as 0.",
+    "Intervals: 2,000-draw family-cluster bootstrap (7 held-out families); paired comparisons use the same draws.",
+    "\"Better\" or \"worse\" is claimed only when the paired interval excludes 0 with complete coverage (comparisonStatus \"complete\").",
+    "Objective difference = planner minus comparator peak ponded volume (m3); negative means the planner leaves less water.",
+    "Best-of-2 runs the simulator on the model design and on the D8 heuristic design and keeps the better one (2 solver calls).",
+    "Greedy solver calls are logical queries answered from the labelling cache; its wall time here is not a live timing (see site evaluation)."
+  ]
+}

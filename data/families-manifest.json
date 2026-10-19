@@ -1,0 +1,546 @@
+{
+  "version": 1,
+  "source": "NJOGIS/NJDEP NJ_10ft_DEM ImageServer (2014-2019 LiDAR composite); NJ 2015 orthoimagery",
+  "license": "NJ public data; attribution NJOGIS / NJDEP; not survey data",
+  "resolutionM": 8,
+  "extentM": 512,
+  "processing": "4 m bilinear export -> metres (x 1200/3937) -> 2 x 2 block mean to 8 m; water-body sink: same rule as site at 4 m, a block is water if any of its 4 cells is",
+  "splitRule": "rank by sha256(id): first 4 validation, next 4 heldout, rest train; fixed before generation",
+  "excluded": {
+    "cooper-river-park": "two thirds of the inner area is a hydro-flattened river",
+    "johnson-park-piscataway": "more than 5% hydro-flattened water inside the core area",
+    "parvin-sp": "more than 5% hydro-flattened water inside the core area",
+    "mercer-county-park": "showcase site; never used for training or tuning"
+  },
+  "families": [
+    {
+      "id": "branch-brook-park",
+      "gridId": "nj-branch-brook-park",
+      "split": "train",
+      "landCoverFromAerial": "urban edge, parking and lawn",
+      "centerUtm18": [
+        569455.9625514459,
+        4513551.154354345
+      ],
+      "latLonApprox": [
+        40.77,
+        -74.177
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=569199.963%2C4513295.154%2C569711.963%2C4513807.154&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=569199.963%2C4513295.154%2C569711.963%2C4513807.154&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "482aad6c480adf9fdd096fed4b637be591634e4c4fa9cb7ca14018d479b2c2c9",
+        "aerial-2015-512m.jpg": "aac48a8157aef6c792cbe8e6a4ddce7dec92430184a9aa2928db4e40eaa2dc34"
+      },
+      "gridSha256": "44617726e98f25dfd8f952e0a7f9bbcc488c58d7e58d5543f168ffbf6d054681",
+      "reliefM": 12.27,
+      "waterCells8m": 0
+    },
+    {
+      "id": "cape-may-county-park",
+      "gridId": "nj-cape-may-county-park",
+      "split": "validation",
+      "landCoverFromAerial": "highway, buildings and lawn",
+      "centerUtm18": [
+        517292.7323883693,
+        4328447.688210038
+      ],
+      "latLonApprox": [
+        39.105,
+        -74.8
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=517036.732%2C4328191.688%2C517548.732%2C4328703.688&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=517036.732%2C4328191.688%2C517548.732%2C4328703.688&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "2fdcc698e74a0b5de8b31509e3a2f9e5c1550e3e1a5628dadf5f6ec435fd8605",
+        "aerial-2015-512m.jpg": "7954bab339b76d14cb7b7af91d001be10cd3d2b0ebad85fad1d43e9611c101a4"
+      },
+      "gridSha256": "8292ecf7c6e1c02563b1777459f50712974bd4693f696374ed98de13019410e7",
+      "reliefM": 3.71,
+      "waterCells8m": 0
+    },
+    {
+      "id": "central-park-morris",
+      "gridId": "nj-central-park-morris",
+      "split": "validation",
+      "landCoverFromAerial": "woods with clearings",
+      "centerUtm18": [
+        540873.0401986042,
+        4523773.134788626
+      ],
+      "latLonApprox": [
+        40.864,
+        -74.515
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=540617.040%2C4523517.135%2C541129.040%2C4524029.135&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=540617.040%2C4523517.135%2C541129.040%2C4524029.135&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "3f5517283f44fde1b146439c86102e6e605e389c11b9e6d2985a9d4dd772bafd",
+        "aerial-2015-512m.jpg": "79020556c98008f513b9b06f27883d156f9d9c96b701631b24c50c5ab4113126"
+      },
+      "gridSha256": "3eac0dcaf042070eec925aa7faf74adad4e224493b376934c42c7c024b1e3477",
+      "reliefM": 57.94,
+      "waterCells8m": 0
+    },
+    {
+      "id": "colonial-park-somerset",
+      "gridId": "nj-colonial-park-somerset",
+      "split": "train",
+      "landCoverFromAerial": "fields and woods",
+      "centerUtm18": [
+        536263.989913671,
+        4483786.704803898
+      ],
+      "latLonApprox": [
+        40.504,
+        -74.572
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=536007.990%2C4483530.705%2C536519.990%2C4484042.705&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=536007.990%2C4483530.705%2C536519.990%2C4484042.705&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "297d4d2259d801162048785db20b69d37c8ac387f42af8fd58a0e9c1da787b81",
+        "aerial-2015-512m.jpg": "63205d52acc83378be495c196a779264fbb4fca13c03eea0ca54d298f626b09e"
+      },
+      "gridSha256": "1c19fc6cb698d4fb338fa2bf192f0bbc5d3670437d45288add7c0eab7b7b7a12",
+      "reliefM": 11.88,
+      "waterCells8m": 0
+    },
+    {
+      "id": "donaldson-park-highland-park",
+      "gridId": "nj-donaldson-park-highland-park",
+      "split": "train",
+      "landCoverFromAerial": "residential and park lawn",
+      "centerUtm18": [
+        548123.2376360424,
+        4484297.674903616
+      ],
+      "latLonApprox": [
+        40.508,
+        -74.432
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=547867.238%2C4484041.675%2C548379.238%2C4484553.675&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=547867.238%2C4484041.675%2C548379.238%2C4484553.675&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "457836969f53b05903673d3f62f864d491788734de815fe4babb8e3d2b8d04db",
+        "aerial-2015-512m.jpg": "d440bc9c4b2a1782dbc2812eb373c521abfa427275d52a0526aef7714f1a3f57"
+      },
+      "gridSha256": "814858efaaca6de938815e364eb0ead46b351f590b6fbd7145eeb18177310c9c",
+      "reliefM": 15.71,
+      "waterCells8m": 0
+    },
+    {
+      "id": "duke-island-park",
+      "gridId": "nj-duke-island-park",
+      "split": "train",
+      "landCoverFromAerial": "suburban edge and woods",
+      "centerUtm18": [
+        527594.5279947816,
+        4491075.824887323
+      ],
+      "latLonApprox": [
+        40.57,
+        -74.674
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=527338.528%2C4490819.825%2C527850.528%2C4491331.825&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=527338.528%2C4490819.825%2C527850.528%2C4491331.825&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "063a14d067d4c431fb8c075163ab48add80d4662cbc212c9fad631485397b148",
+        "aerial-2015-512m.jpg": "dee3f38b2c4379023815e5f2723022db241b2491ac9ea591b44d0d6eb6a67441"
+      },
+      "gridSha256": "8299f8a75c43eb3a0c4d25298e74fb17ff63562b6e2abaa648f5d7140acc1799",
+      "reliefM": 16.49,
+      "waterCells8m": 32
+    },
+    {
+      "id": "estell-manor-park",
+      "gridId": "nj-estell-manor-park",
+      "split": "train",
+      "landCoverFromAerial": "pine forest",
+      "centerUtm18": [
+        522383.36135054193,
+        4362308.571440646
+      ],
+      "latLonApprox": [
+        39.41,
+        -74.74
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=522127.361%2C4362052.571%2C522639.361%2C4362564.571&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=522127.361%2C4362052.571%2C522639.361%2C4362564.571&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "9e8e2fc9538f78900956906d8bd9f8a6b490c36237654ace8faa41c5625c28d0",
+        "aerial-2015-512m.jpg": "d5ba0f79ea3e3bf62ba9c369dc6451a10f845f4fc90ef4e366a6a126cdd3fa9c"
+      },
+      "gridSha256": "3b206504b43f9c3610a6d4b662771012cf12fd89b808f9ea9740f18c1a86daca",
+      "reliefM": 5.47,
+      "waterCells8m": 0
+    },
+    {
+      "id": "garret-mountain",
+      "gridId": "nj-garret-mountain",
+      "split": "train",
+      "landCoverFromAerial": "rail yard and commercial lots",
+      "centerUtm18": [
+        570325.8715702869,
+        4528546.814640509
+      ],
+      "latLonApprox": [
+        40.905,
+        -74.165
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=570069.872%2C4528290.815%2C570581.872%2C4528802.815&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=570069.872%2C4528290.815%2C570581.872%2C4528802.815&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "d1ea20a965e9bd74533dce94b27c7387c888f8484e01b7f08bad38b924064382",
+        "aerial-2015-512m.jpg": "256921ca503cc7b26bd5aeba7c88ddc0e524aa7bda686666e5e51c98a87911a8"
+      },
+      "gridSha256": "4f7ca3322ed56b09dea60600b31fc8c0b4d9b796ae9a5aebe03bdf86f9cc01fd",
+      "reliefM": 18.84,
+      "waterCells8m": 0
+    },
+    {
+      "id": "holmdel-park",
+      "gridId": "nj-holmdel-park",
+      "split": "validation",
+      "landCoverFromAerial": "fields and woods",
+      "centerUtm18": [
+        569796.2042337507,
+        4468039.182961264
+      ],
+      "latLonApprox": [
+        40.36,
+        -74.178
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=569540.204%2C4467783.183%2C570052.204%2C4468295.183&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=569540.204%2C4467783.183%2C570052.204%2C4468295.183&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "5f884cb0a5cf7f62e7c4c7e30baa2fcf0293c568744d0aed4798be726b47b3ef",
+        "aerial-2015-512m.jpg": "b19f5582a023c30d42e78e805a8a954bdae26e44b7458e24dcd4f06053ddfe06"
+      },
+      "gridSha256": "1efb8e4a5cc7837c1aa3b2877bd219b97a4b5fe7d39cc1f2db6018825366ca75",
+      "reliefM": 43.18,
+      "waterCells8m": 0
+    },
+    {
+      "id": "liberty-state-park",
+      "gridId": "nj-liberty-state-park",
+      "split": "train",
+      "landCoverFromAerial": "woods and open ground",
+      "centerUtm18": [
+        579748.8881505458,
+        4506105.538561731
+      ],
+      "latLonApprox": [
+        40.702,
+        -74.056
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=579492.888%2C4505849.539%2C580004.888%2C4506361.539&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=579492.888%2C4505849.539%2C580004.888%2C4506361.539&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "8e1fc42d7864eee5eb591d6561bb60ce5bf01b9709beecaf3b2cb17f76320c13",
+        "aerial-2015-512m.jpg": "a9e3ce9cece97890542dc5f32a065c6be189fe5751be820bbb1cc784ad17748b"
+      },
+      "gridSha256": "da2e9f4f43fb86344a28daafb3cff087cbbcdc71b28ffa6b3eb846ff6a31eb28",
+      "reliefM": 2.58,
+      "waterCells8m": 0
+    },
+    {
+      "id": "lord-stirling-park",
+      "gridId": "nj-lord-stirling-park",
+      "split": "train",
+      "landCoverFromAerial": "flat woods and wetland",
+      "centerUtm18": [
+        539701.716533407,
+        4506449.3199842675
+      ],
+      "latLonApprox": [
+        40.708,
+        -74.53
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=539445.717%2C4506193.320%2C539957.717%2C4506705.320&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=539445.717%2C4506193.320%2C539957.717%2C4506705.320&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "71989356f3016f430a8e8fad7e2a14ba4c7d1944169a85856084fdfb801bfd80",
+        "aerial-2015-512m.jpg": "bc29857f88a660c4410613223439068f989d1ee8e0dfac46a6351c547365ca7e"
+      },
+      "gridSha256": "ea890fdc1306fa5c5bdb15eaac9f6edab85b4745c3bf38a0b8b08c3c4f48627c",
+      "reliefM": 1.7,
+      "waterCells8m": 0
+    },
+    {
+      "id": "monmouth-battlefield-sp",
+      "gridId": "nj-monmouth-battlefield-sp",
+      "split": "heldout",
+      "landCoverFromAerial": "residential streets",
+      "centerUtm18": [
+        557231.3515586418,
+        4456499.552849669
+      ],
+      "latLonApprox": [
+        40.257,
+        -74.327
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=556975.352%2C4456243.553%2C557487.352%2C4456755.553&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=556975.352%2C4456243.553%2C557487.352%2C4456755.553&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "dcc07c8644d3a023ecdd051121795be8befe38aed502b39697036e93ef14b05a",
+        "aerial-2015-512m.jpg": "a6ddbac2843858860054a5c7366182afda4a3beb65676f835239bba76c5eda78"
+      },
+      "gridSha256": "65b6c38c0b63ba01ce9bc8ecef660826b32b552ac4de2765b3d63e14210eb5e3",
+      "reliefM": 10.24,
+      "waterCells8m": 0
+    },
+    {
+      "id": "ocean-county-park",
+      "gridId": "nj-ocean-county-park",
+      "split": "train",
+      "landCoverFromAerial": "pine forest, lake corner outside core",
+      "centerUtm18": [
+        569215.3145295958,
+        4438728.272116345
+      ],
+      "latLonApprox": [
+        40.096,
+        -74.188
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=568959.315%2C4438472.272%2C569471.315%2C4438984.272&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=568959.315%2C4438472.272%2C569471.315%2C4438984.272&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "c0fac9c1a9e2ce9057bbdd817a5690700039bb3704a3a53775aefe0ced30ab2b",
+        "aerial-2015-512m.jpg": "b645cca2e462b45b5fdaef92f7fb4302e7846d643276e50a72abe0d4f57a4d53"
+      },
+      "gridSha256": "12b1bef435da6563e7e901e8aac933aa245a9f5d3af723c18b6245078206879a",
+      "reliefM": 9.44,
+      "waterCells8m": 272
+    },
+    {
+      "id": "overpeck-park",
+      "gridId": "nj-overpeck-park",
+      "split": "train",
+      "landCoverFromAerial": "residential and commercial",
+      "centerUtm18": [
+        585116.2676180678,
+        4524261.829786006
+      ],
+      "latLonApprox": [
+        40.865,
+        -73.99
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=584860.268%2C4524005.830%2C585372.268%2C4524517.830&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=584860.268%2C4524005.830%2C585372.268%2C4524517.830&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "eafe4f5daeeb4a3745a42f25284f2b5f6a2f82a4ec1293bd0138e2473870d556",
+        "aerial-2015-512m.jpg": "3d5b6d2db67905f8cc41227f35b0c485018580235c5219a059dee5d2a1b95cfe"
+      },
+      "gridSha256": "348422d7f0a88dbcb2969194990a5c97d050e298f7fd80526121b6b9a06a7e75",
+      "reliefM": 30.73,
+      "waterCells8m": 0
+    },
+    {
+      "id": "roosevelt-park-edison",
+      "gridId": "nj-roosevelt-park-edison",
+      "split": "train",
+      "landCoverFromAerial": "residential and institutional",
+      "centerUtm18": [
+        554942.6152083292,
+        4490228.104925475
+      ],
+      "latLonApprox": [
+        40.561,
+        -74.351
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=554686.615%2C4489972.105%2C555198.615%2C4490484.105&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=554686.615%2C4489972.105%2C555198.615%2C4490484.105&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "b52a0f79abf638d3de8bb635f37dd08a76e5ffb81f818e23dbe8f15f3c745d45",
+        "aerial-2015-512m.jpg": "d43fb1ef11251e4eca695e9a95006504987db62e04c8beba92047d82b074f329"
+      },
+      "gridSha256": "e01b206daa9b48bfd20c4e04ec48823afe471b2541aafb429b6330792248ce48",
+      "reliefM": 14.41,
+      "waterCells8m": 0
+    },
+    {
+      "id": "rosedale-park",
+      "gridId": "nj-rosedale-park",
+      "split": "train",
+      "landCoverFromAerial": "open field and woods",
+      "centerUtm18": [
+        523791.2468879459,
+        4462535.708981514
+      ],
+      "latLonApprox": [
+        40.313,
+        -74.72
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=523535.247%2C4462279.709%2C524047.247%2C4462791.709&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=523535.247%2C4462279.709%2C524047.247%2C4462791.709&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "045c72c63dc8f0161de2f88992d2ba9b0d4510329f12f9bec186e9b66086cb4a",
+        "aerial-2015-512m.jpg": "f36eb973d7f6bcefe72461360cdc9d0400892df609e8b7a595f324dc13fc6316"
+      },
+      "gridSha256": "31b793aeeef1001fc59bf79988f70c76e19678688f66f23ed2df2dd55a81cfa8",
+      "reliefM": 18.38,
+      "waterCells8m": 0
+    },
+    {
+      "id": "thompson-park-lincroft",
+      "gridId": "nj-thompson-park-lincroft",
+      "split": "heldout",
+      "landCoverFromAerial": "suburban and woods",
+      "centerUtm18": [
+        575001.2677398031,
+        4465536.1153222695
+      ],
+      "latLonApprox": [
+        40.337,
+        -74.117
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=574745.268%2C4465280.115%2C575257.268%2C4465792.115&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=574745.268%2C4465280.115%2C575257.268%2C4465792.115&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "77b3ee20ea6d88e2263d0e07f3343609c46f78c6cfa750017f0e76bddcbd5af6",
+        "aerial-2015-512m.jpg": "ea59e01357f0c7b87ff085327fc3938645d92b6ec83664bcf35d2a6048fa4f4b"
+      },
+      "gridSha256": "ee15ebbfeb0c2a456b27508a1ab5b241aea679ada769e53177b8984acd83ecbc",
+      "reliefM": 23.35,
+      "waterCells8m": 0
+    },
+    {
+      "id": "turkey-swamp-park",
+      "gridId": "nj-turkey-swamp-park",
+      "split": "heldout",
+      "landCoverFromAerial": "woods and sand",
+      "centerUtm18": [
+        559076.2284075778,
+        4448965.600882094
+      ],
+      "latLonApprox": [
+        40.189,
+        -74.306
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=558820.228%2C4448709.601%2C559332.228%2C4449221.601&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=558820.228%2C4448709.601%2C559332.228%2C4449221.601&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "8ea1eb05c40b2fb9f6138c8b4ff27a3cd0330e75267616cf3e422fe011e1aaa1",
+        "aerial-2015-512m.jpg": "c5ac44b2af6b1fe6f231bcce93c5e3c5a14e6cdfbaff8a5b30ccd96c1431464f"
+      },
+      "gridSha256": "c73e6497230d0513aa4f2dcf0c759aef4e2ea7ebd80d0385492faa008cfffbcc",
+      "reliefM": 5.09,
+      "waterCells8m": 0
+    },
+    {
+      "id": "van-saun-park",
+      "gridId": "nj-van-saun-park",
+      "split": "heldout",
+      "landCoverFromAerial": "residential streets",
+      "centerUtm18": [
+        580570.7944820481,
+        4531427.295035742
+      ],
+      "latLonApprox": [
+        40.93,
+        -74.043
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=580314.794%2C4531171.295%2C580826.794%2C4531683.295&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=580314.794%2C4531171.295%2C580826.794%2C4531683.295&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "b9b1e53ba5fd92b750682eb1667fe38b45d66c2861ffeb368f3682e0e30c6b0c",
+        "aerial-2015-512m.jpg": "42d05d8f68f4a90c28d793a5f660b4c6671aeb986a98e94d9d2fec9a51088303"
+      },
+      "gridSha256": "0a073334ca93e8d5bfdd5bab4c1797d15fe4eb4d4c82029b2adf23f349b38a75",
+      "reliefM": 26.15,
+      "waterCells8m": 0
+    },
+    {
+      "id": "verona-park",
+      "gridId": "nj-verona-park",
+      "split": "train",
+      "landCoverFromAerial": "residential streets",
+      "centerUtm18": [
+        563915.6276679385,
+        4519829.128505837
+      ],
+      "latLonApprox": [
+        40.827,
+        -74.242
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=563659.628%2C4519573.129%2C564171.628%2C4520085.129&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=563659.628%2C4519573.129%2C564171.628%2C4520085.129&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "8627a161b184dd4c02c0803b3338a90d4f29c7cddb8cb69f9eeed916be587206",
+        "aerial-2015-512m.jpg": "234cd8c1eab5315a7d6f725ce708c31777a480e6b17115461b70ce5482ea2c93"
+      },
+      "gridSha256": "d13d52f2b62c5d612d98810ba017f89d485f8f235bf5ae71f2af4c3963fe1cce",
+      "reliefM": 34.12,
+      "waterCells8m": 0
+    },
+    {
+      "id": "veterans-park-hamilton",
+      "gridId": "nj-veterans-park-hamilton",
+      "split": "train",
+      "landCoverFromAerial": "open field and woods",
+      "centerUtm18": [
+        528169.4143203655,
+        4450563.142826517
+      ],
+      "latLonApprox": [
+        40.205,
+        -74.669
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=527913.414%2C4450307.143%2C528425.414%2C4450819.143&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=527913.414%2C4450307.143%2C528425.414%2C4450819.143&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "44481883ac5d3533512a39679704cc22b9f8f17322d907bc900eac3ca701c6d5",
+        "aerial-2015-512m.jpg": "3c9703f02b1da4d6a5af9408b1b0fd5f34e85a0e85613345e566ca8d017e516b"
+      },
+      "gridSha256": "122d933f4e7b04f747c045cf541abf6a3b5bd4299680774a6a13b53ef1e46407",
+      "reliefM": 8.21,
+      "waterCells8m": 0
+    },
+    {
+      "id": "warinanco-park",
+      "gridId": "nj-warinanco-park",
+      "split": "validation",
+      "landCoverFromAerial": "residential streets",
+      "centerUtm18": [
+        563234.1490969312,
+        4500839.871214749
+      ],
+      "latLonApprox": [
+        40.656,
+        -74.252
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=562978.149%2C4500583.871%2C563490.149%2C4501095.871&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=562978.149%2C4500583.871%2C563490.149%2C4501095.871&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "835bf140f407a9ba62ad9d558d8d906296775bab3791e74a7c7cc278c79770ff",
+        "aerial-2015-512m.jpg": "5f88d6744a053b13f091dd6ec6236a5d3f54437808c46a52ec0fbd74ff58cfc6"
+      },
+      "gridSha256": "dcaddf95ad0084e0f3cf8b12adfc1d0853a583b1ee3141717d9560ef98750ac2",
+      "reliefM": 9.79,
+      "waterCells8m": 0
+    },
+    {
+      "id": "washington-crossing-sp",
+      "gridId": "nj-washington-crossing-sp",
+      "split": "train",
+      "landCoverFromAerial": "residential and woods",
+      "centerUtm18": [
+        510792.297482956,
+        4461617.86666945
+      ],
+      "latLonApprox": [
+        40.305,
+        -74.873
+      ],
+      "demUrl": "https://maps.nj.gov/arcgis/rest/services/Elevation/NJ_10ft_DEM/ImageServer/exportImage?bbox=510536.297%2C4461361.867%2C511048.297%2C4461873.867&bboxSR=32618&imageSR=32618&f=image&size=128%2C128&format=tiff&pixelType=F32&interpolation=RSP_BilinearInterpolation&noData=-9999",
+      "imageryUrl": "https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer/export?bbox=510536.297%2C4461361.867%2C511048.297%2C4461873.867&bboxSR=32618&imageSR=32618&f=image&size=512%2C512&format=jpg&transparent=false",
+      "rawSha256": {
+        "dem-512m-4m.tiff": "3a642b1abf688cc55db18fb9c6658be8fbb47de5e2e96c9032e937345c019d4b",
+        "aerial-2015-512m.jpg": "ea1debf8c22971d284531c36d6fd23739794e64689df8e75f7cdf2061022b676"
+      },
+      "gridSha256": "93e0a5e7e3b7576e6337c1ced4ed4897e53446997105306f1ade0a8f390f6f9f",
+      "reliefM": 29.26,
+      "waterCells8m": 20
+    }
+  ]
+}

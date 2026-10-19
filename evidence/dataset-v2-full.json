@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-10-17T16:06:29.164Z",
+  "solver": "li-1.0.0",
+  "caseVersion": "runofflab-cases-1",
+  "promptVersion": "runofflab-planner-prompt-5",
+  "pilot": false,
+  "partial": false,
+  "cases": 4840,
+  "seconds": 0,
+  "plannedCases": 4840,
+  "missingCases": 0,
+  "crossSplitPromptDuplicates": 0,
+  "familiesManifestSha256": "a459a7f55d7c2e54d5ce370ad798c30ae4d37767f35d3d301622591f6bdca49b",
+  "secondsPerCase": 0,
+  "meanSimulationCalls": 88.71363636363637,
+  "emptyLabels": 54,
+  "labelsBetterThanGreedy": 403,
+  "meanRelativeReduction": 0.10090317840922781,
+  "meanCandidates": 27.58099173553719,
+  "designKeyExample": "G5",
+  "files": {
+    "models/data/v2/train.jsonl": {
+      "rows": 4000,
+      "bytes": 10699585,
+      "sha256": "b3a72d485b2f079113a8693f6ba1e5f8442dd1098c0192078b371a116aa670de",
+      "families": [
+        "nj-branch-brook-park",
+        "nj-colonial-park-somerset",
+        "nj-donaldson-park-highland-park",
+        "nj-duke-island-park",
+        "nj-estell-manor-park",
+        "nj-garret-mountain",
+        "nj-liberty-state-park",
+        "nj-lord-stirling-park",
+        "nj-ocean-county-park",
+        "nj-overpeck-park",
+        "nj-roosevelt-park-edison",
+        "nj-rosedale-park",
+        "nj-verona-park",
+        "nj-veterans-park-hamilton",
+        "nj-washington-crossing-sp",
+        "synthetic-01",
+        "synthetic-02",
+        "synthetic-03",
+        "synthetic-04",
+        "synthetic-05",
+        "synthetic-06",
+        "synthetic-07",
+        "synthetic-08",
+        "synthetic-09",
+        "synthetic-10"
+      ],
+      "realRows": 2700
+    },
+    "models/data/v2/validation.jsonl": {
+      "rows": 420,
+      "bytes": 1127383,
+      "sha256": "4b0e4a287c8108da8a0cbe67e755e16b6419de0736ef0aafd2d9337cf3321cef",
+      "families": [
+        "nj-cape-may-county-park",
+        "nj-central-park-morris",
+        "nj-holmdel-park",
+        "nj-warinanco-park",
+        "synthetic-11",
+        "synthetic-12",
+        "synthetic-13"
+      ],
+      "realRows": 240
+    },
+    "models/data/v2/heldout.jsonl": {
+      "rows": 420,
+      "bytes": 1125116,
+      "sha256": "0ef0d30ffdfd5b15805e2185a93171a6a206ef60239385f9cbee1bbbbd82db3a",
+      "families": [
+        "nj-monmouth-battlefield-sp",
+        "nj-thompson-park-lincroft",
+        "nj-turkey-swamp-park",
+        "nj-van-saun-park",
+        "synthetic-14",
+        "synthetic-15",
+        "synthetic-16"
+      ],
+      "realRows": 240
+    }
+  },
+  "limitations": [
+    "Labels are the best design found by a bounded search, not a proven optimum; see labelsBetterThanGreedy and the exhaustive check.",
+    "Real families are bare-earth LiDAR without buildings; eligible areas are random ellipses, not mapped lawns.",
+    "Simulated objective on 8 m grids; the showcase is 4 m and is never in training."
+  ]
+}

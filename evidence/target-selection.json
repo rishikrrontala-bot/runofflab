@@ -1,0 +1,265 @@
+{
+  "timestamp": "2026-10-17T08:15:35.247Z",
+  "solver": "li-1.0.0",
+  "rule": "see scripts/select_targets.ts header",
+  "storm": {
+    "rainMmH": 60,
+    "rainMinutes": 20,
+    "drainMinutes": 10
+  },
+  "candidateWindows": 344,
+  "chosen": [
+    {
+      "x": 47,
+      "y": 68,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.5,
+      "peakVolumeM3": 23.511283840984106,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 65,
+      "y": 53,
+      "width": 6,
+      "height": 10,
+      "name": "",
+      "pavedFraction": 0.55,
+      "peakVolumeM3": 22.247828356921673,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 46,
+      "y": 52,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.5,
+      "peakVolumeM3": 13.721079799346626,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 56,
+      "y": 47,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.65,
+      "peakVolumeM3": 10.6026446307078,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 36,
+      "y": 57,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.65,
+      "peakVolumeM3": 7.499890407547355,
+      "peakTimeS": 1200
+    }
+  ],
+  "top20": [
+    {
+      "x": 47,
+      "y": 68,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.5,
+      "peakVolumeM3": 23.511283840984106,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 65,
+      "y": 53,
+      "width": 6,
+      "height": 10,
+      "name": "",
+      "pavedFraction": 0.55,
+      "peakVolumeM3": 22.247828356921673,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 65,
+      "y": 52,
+      "width": 6,
+      "height": 10,
+      "name": "",
+      "pavedFraction": 0.5666666666666667,
+      "peakVolumeM3": 22.063716880977154,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 65,
+      "y": 55,
+      "width": 6,
+      "height": 10,
+      "name": "",
+      "pavedFraction": 0.5166666666666667,
+      "peakVolumeM3": 21.93919312953949,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 54,
+      "y": 65,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.5833333333333334,
+      "peakVolumeM3": 21.674326627515256,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 66,
+      "y": 53,
+      "width": 6,
+      "height": 10,
+      "name": "",
+      "pavedFraction": 0.5,
+      "peakVolumeM3": 21.62639409583062,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 65,
+      "y": 54,
+      "width": 6,
+      "height": 10,
+      "name": "",
+      "pavedFraction": 0.5333333333333333,
+      "peakVolumeM3": 21.496049098670483,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 48,
+      "y": 68,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.5166666666666667,
+      "peakVolumeM3": 21.494905725121498,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 64,
+      "y": 55,
+      "width": 6,
+      "height": 10,
+      "name": "",
+      "pavedFraction": 0.5666666666666667,
+      "peakVolumeM3": 21.451115399599075,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 55,
+      "y": 65,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.5,
+      "peakVolumeM3": 21.444655610248446,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 53,
+      "y": 65,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.65,
+      "peakVolumeM3": 21.31008280441165,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 49,
+      "y": 68,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.5333333333333333,
+      "peakVolumeM3": 21.261476814746857,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 64,
+      "y": 52,
+      "width": 6,
+      "height": 10,
+      "name": "",
+      "pavedFraction": 0.5333333333333333,
+      "peakVolumeM3": 21.250951264053583,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 50,
+      "y": 68,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.5166666666666667,
+      "peakVolumeM3": 20.997590631246567,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 65,
+      "y": 51,
+      "width": 6,
+      "height": 10,
+      "name": "",
+      "pavedFraction": 0.55,
+      "peakVolumeM3": 20.896334923803806,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 54,
+      "y": 66,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.5333333333333333,
+      "peakVolumeM3": 20.88647211715579,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 53,
+      "y": 66,
+      "width": 10,
+      "height": 6,
+      "name": "",
+      "pavedFraction": 0.6166666666666667,
+      "peakVolumeM3": 20.868912409991026,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 64,
+      "y": 53,
+      "width": 6,
+      "height": 10,
+      "name": "",
+      "pavedFraction": 0.55,
+      "peakVolumeM3": 20.686374481767416,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 66,
+      "y": 52,
+      "width": 6,
+      "height": 10,
+      "name": "",
+      "pavedFraction": 0.55,
+      "peakVolumeM3": 20.644026414491236,
+      "peakTimeS": 1200
+    },
+    {
+      "x": 64,
+      "y": 56,
+      "width": 6,
+      "height": 10,
+      "name": "",
+      "pavedFraction": 0.5166666666666667,
+      "peakVolumeM3": 20.38073667511344,
+      "peakTimeS": 1200
+    }
+  ]
+}

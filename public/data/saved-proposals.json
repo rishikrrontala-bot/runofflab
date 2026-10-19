@@ -1,0 +1,384 @@
+{
+  "version": 1,
+  "note": "Recorded answers from a trained planner model; the app reruns each design live and labels it as saved output.",
+  "entries": [
+    {
+      "config": {
+        "solver": "li-1.0.0",
+        "rainMmH": 60,
+        "rainMinutes": 20,
+        "drainMinutes": 10,
+        "infiltrationMmH": 3,
+        "soilCapacityM": 0.04,
+        "initialSoilM": 0,
+        "initialDepthM": 0,
+        "roughness": 0.045,
+        "boundary": "open",
+        "headEpsilonM": 0.01,
+        "maxDt": 2,
+        "outputSeconds": 30,
+        "thresholdM": 0,
+        "roi": {
+          "x": 47,
+          "y": 68,
+          "width": 10,
+          "height": 6,
+          "name": "South loop target"
+        },
+        "areaBudgetM2": 768,
+        "maxPatches": 3
+      },
+      "proposal": {
+        "selected_patch_ids": [
+          "G7",
+          "G8",
+          "G12"
+        ]
+      },
+      "model": "Qwen/Qwen3.5-4B",
+      "method": "trained-adaption",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+      "trainingRows": 4000,
+      "recordedAt": "2026-10-18T02:38:24.084Z",
+      "promptVersion": "runofflab-planner-prompt-5",
+      "solver": "li-1.0.0",
+      "promptSignature": "b68c9a49"
+    },
+    {
+      "config": {
+        "solver": "li-1.0.0",
+        "rainMmH": 100,
+        "rainMinutes": 10,
+        "drainMinutes": 10,
+        "infiltrationMmH": 3,
+        "soilCapacityM": 0.04,
+        "initialSoilM": 0,
+        "initialDepthM": 0,
+        "roughness": 0.045,
+        "boundary": "open",
+        "headEpsilonM": 0.01,
+        "maxDt": 2,
+        "outputSeconds": 30,
+        "thresholdM": 0,
+        "roi": {
+          "x": 47,
+          "y": 68,
+          "width": 10,
+          "height": 6,
+          "name": "South loop target"
+        },
+        "areaBudgetM2": 768,
+        "maxPatches": 3
+      },
+      "proposal": {
+        "selected_patch_ids": [
+          "G7",
+          "G8",
+          "G12"
+        ]
+      },
+      "model": "Qwen/Qwen3.5-4B",
+      "method": "trained-adaption",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+      "trainingRows": 4000,
+      "recordedAt": "2026-10-18T02:38:27.049Z",
+      "promptVersion": "runofflab-planner-prompt-5",
+      "solver": "li-1.0.0",
+      "promptSignature": "481b63c5"
+    },
+    {
+      "config": {
+        "solver": "li-1.0.0",
+        "rainMmH": 35,
+        "rainMinutes": 45,
+        "drainMinutes": 15,
+        "infiltrationMmH": 3,
+        "soilCapacityM": 0.04,
+        "initialSoilM": 0,
+        "initialDepthM": 0,
+        "roughness": 0.045,
+        "boundary": "open",
+        "headEpsilonM": 0.01,
+        "maxDt": 2,
+        "outputSeconds": 30,
+        "thresholdM": 0,
+        "roi": {
+          "x": 47,
+          "y": 68,
+          "width": 10,
+          "height": 6,
+          "name": "South loop target"
+        },
+        "areaBudgetM2": 768,
+        "maxPatches": 3
+      },
+      "proposal": {
+        "selected_patch_ids": [
+          "G7",
+          "G8",
+          "G12"
+        ]
+      },
+      "model": "Qwen/Qwen3.5-4B",
+      "method": "trained-adaption",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+      "trainingRows": 4000,
+      "recordedAt": "2026-10-18T02:38:29.991Z",
+      "promptVersion": "runofflab-planner-prompt-5",
+      "solver": "li-1.0.0",
+      "promptSignature": "40e3ec0f"
+    },
+    {
+      "config": {
+        "solver": "li-1.0.0",
+        "rainMmH": 60,
+        "rainMinutes": 20,
+        "drainMinutes": 10,
+        "infiltrationMmH": 3,
+        "soilCapacityM": 0.04,
+        "initialSoilM": 0,
+        "initialDepthM": 0,
+        "roughness": 0.045,
+        "boundary": "open",
+        "headEpsilonM": 0.01,
+        "maxDt": 2,
+        "outputSeconds": 30,
+        "thresholdM": 0,
+        "roi": {
+          "x": 65,
+          "y": 53,
+          "width": 6,
+          "height": 10,
+          "name": "East parking target"
+        },
+        "areaBudgetM2": 768,
+        "maxPatches": 3
+      },
+      "proposal": {
+        "selected_patch_ids": [
+          "G2",
+          "G3",
+          "G6"
+        ]
+      },
+      "model": "Qwen/Qwen3.5-4B",
+      "method": "trained-adaption",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+      "trainingRows": 4000,
+      "recordedAt": "2026-10-18T02:38:32.885Z",
+      "promptVersion": "runofflab-planner-prompt-5",
+      "solver": "li-1.0.0",
+      "promptSignature": "3a925c10"
+    },
+    {
+      "config": {
+        "solver": "li-1.0.0",
+        "rainMmH": 100,
+        "rainMinutes": 10,
+        "drainMinutes": 10,
+        "infiltrationMmH": 3,
+        "soilCapacityM": 0.04,
+        "initialSoilM": 0,
+        "initialDepthM": 0,
+        "roughness": 0.045,
+        "boundary": "open",
+        "headEpsilonM": 0.01,
+        "maxDt": 2,
+        "outputSeconds": 30,
+        "thresholdM": 0,
+        "roi": {
+          "x": 65,
+          "y": 53,
+          "width": 6,
+          "height": 10,
+          "name": "East parking target"
+        },
+        "areaBudgetM2": 768,
+        "maxPatches": 3
+      },
+      "proposal": {
+        "selected_patch_ids": [
+          "G2",
+          "G3",
+          "G6"
+        ]
+      },
+      "model": "Qwen/Qwen3.5-4B",
+      "method": "trained-adaption",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+      "trainingRows": 4000,
+      "recordedAt": "2026-10-18T02:38:35.793Z",
+      "promptVersion": "runofflab-planner-prompt-5",
+      "solver": "li-1.0.0",
+      "promptSignature": "39baeac4"
+    },
+    {
+      "config": {
+        "solver": "li-1.0.0",
+        "rainMmH": 35,
+        "rainMinutes": 45,
+        "drainMinutes": 15,
+        "infiltrationMmH": 3,
+        "soilCapacityM": 0.04,
+        "initialSoilM": 0,
+        "initialDepthM": 0,
+        "roughness": 0.045,
+        "boundary": "open",
+        "headEpsilonM": 0.01,
+        "maxDt": 2,
+        "outputSeconds": 30,
+        "thresholdM": 0,
+        "roi": {
+          "x": 65,
+          "y": 53,
+          "width": 6,
+          "height": 10,
+          "name": "East parking target"
+        },
+        "areaBudgetM2": 768,
+        "maxPatches": 3
+      },
+      "proposal": {
+        "selected_patch_ids": [
+          "G2",
+          "G3",
+          "G6"
+        ]
+      },
+      "model": "Qwen/Qwen3.5-4B",
+      "method": "trained-adaption",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+      "trainingRows": 4000,
+      "recordedAt": "2026-10-18T02:38:38.729Z",
+      "promptVersion": "runofflab-planner-prompt-5",
+      "solver": "li-1.0.0",
+      "promptSignature": "b6efe66e"
+    },
+    {
+      "config": {
+        "solver": "li-1.0.0",
+        "rainMmH": 60,
+        "rainMinutes": 20,
+        "drainMinutes": 10,
+        "infiltrationMmH": 3,
+        "soilCapacityM": 0.04,
+        "initialSoilM": 0,
+        "initialDepthM": 0,
+        "roughness": 0.045,
+        "boundary": "open",
+        "headEpsilonM": 0.01,
+        "maxDt": 2,
+        "outputSeconds": 30,
+        "thresholdM": 0,
+        "roi": {
+          "x": 46,
+          "y": 52,
+          "width": 10,
+          "height": 6,
+          "name": "North parking target"
+        },
+        "areaBudgetM2": 768,
+        "maxPatches": 3
+      },
+      "proposal": {
+        "selected_patch_ids": [
+          "G4",
+          "G5",
+          "G7"
+        ]
+      },
+      "model": "Qwen/Qwen3.5-4B",
+      "method": "trained-adaption",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+      "trainingRows": 4000,
+      "recordedAt": "2026-10-18T02:38:41.671Z",
+      "promptVersion": "runofflab-planner-prompt-5",
+      "solver": "li-1.0.0",
+      "promptSignature": "fd5b55b9"
+    },
+    {
+      "config": {
+        "solver": "li-1.0.0",
+        "rainMmH": 100,
+        "rainMinutes": 10,
+        "drainMinutes": 10,
+        "infiltrationMmH": 3,
+        "soilCapacityM": 0.04,
+        "initialSoilM": 0,
+        "initialDepthM": 0,
+        "roughness": 0.045,
+        "boundary": "open",
+        "headEpsilonM": 0.01,
+        "maxDt": 2,
+        "outputSeconds": 30,
+        "thresholdM": 0,
+        "roi": {
+          "x": 46,
+          "y": 52,
+          "width": 10,
+          "height": 6,
+          "name": "North parking target"
+        },
+        "areaBudgetM2": 768,
+        "maxPatches": 3
+      },
+      "proposal": {
+        "selected_patch_ids": [
+          "G4",
+          "G5",
+          "G7"
+        ]
+      },
+      "model": "Qwen/Qwen3.5-4B",
+      "method": "trained-adaption",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+      "trainingRows": 4000,
+      "recordedAt": "2026-10-18T02:38:44.582Z",
+      "promptVersion": "runofflab-planner-prompt-5",
+      "solver": "li-1.0.0",
+      "promptSignature": "bc89cd5d"
+    },
+    {
+      "config": {
+        "solver": "li-1.0.0",
+        "rainMmH": 35,
+        "rainMinutes": 45,
+        "drainMinutes": 15,
+        "infiltrationMmH": 3,
+        "soilCapacityM": 0.04,
+        "initialSoilM": 0,
+        "initialDepthM": 0,
+        "roughness": 0.045,
+        "boundary": "open",
+        "headEpsilonM": 0.01,
+        "maxDt": 2,
+        "outputSeconds": 30,
+        "thresholdM": 0,
+        "roi": {
+          "x": 46,
+          "y": 52,
+          "width": 10,
+          "height": 6,
+          "name": "North parking target"
+        },
+        "areaBudgetM2": 768,
+        "maxPatches": 3
+      },
+      "proposal": {
+        "selected_patch_ids": [
+          "G4",
+          "G5",
+          "G7"
+        ]
+      },
+      "model": "Qwen/Qwen3.5-4B",
+      "method": "trained-adaption",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+      "trainingRows": 4000,
+      "recordedAt": "2026-10-18T02:38:47.493Z",
+      "promptVersion": "runofflab-planner-prompt-5",
+      "solver": "li-1.0.0",
+      "promptSignature": "ee01c247"
+    }
+  ]
+}

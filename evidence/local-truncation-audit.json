@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-10-18T02:41:52.222Z",
+  "method": "outputTokens re-encodes the returned text with the model tokenizer; a truncated answer would reach the cap and usually not parse as JSON.",
+  "allClear": true,
+  "reports": [
+    {
+      "report": "v2-heldout-heldout-adaption-qwen35-4b-b8.json",
+      "split": "heldout",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-b8",
+      "cap": 96,
+      "attempts": 420,
+      "maxOutputTokens": 17,
+      "atOrAboveCap": 0,
+      "notCompleteJson": 0
+    },
+    {
+      "report": "v2-heldout-heldout-adaption-qwen35-4b-e6.json",
+      "split": "heldout",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+      "cap": 96,
+      "attempts": 420,
+      "maxOutputTokens": 17,
+      "atOrAboveCap": 0,
+      "notCompleteJson": 0
+    },
+    {
+      "report": "v2-heldout-heldout-adaption-qwen35-9b-q8.json",
+      "split": "heldout",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-9b-retry-q8",
+      "cap": 96,
+      "attempts": 421,
+      "maxOutputTokens": 17,
+      "atOrAboveCap": 0,
+      "notCompleteJson": 0
+    },
+    {
+      "report": "v2-heldout-heldout-local-qwen35-08b.json",
+      "split": "heldout",
+      "checkpoint": "models/checkpoints/local-v2-08b",
+      "cap": 96,
+      "attempts": 429,
+      "maxOutputTokens": 17,
+      "atOrAboveCap": 0,
+      "notCompleteJson": 0
+    },
+    {
+      "report": "v2-validation-val-adaption-qwen35-4b-e6.json",
+      "split": "validation",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+      "cap": 96,
+      "attempts": 419,
+      "maxOutputTokens": 17,
+      "atOrAboveCap": 0,
+      "notCompleteJson": 0
+    },
+    {
+      "report": "v2-validation-val-adaption-qwen35-4b.json",
+      "split": "validation",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-b8",
+      "cap": 96,
+      "attempts": 420,
+      "maxOutputTokens": 17,
+      "atOrAboveCap": 0,
+      "notCompleteJson": 0
+    },
+    {
+      "report": "v2-validation-val-adaption-qwen35-9b-q8.json",
+      "split": "validation",
+      "checkpoint": "models/checkpoints/merged-v2-qwen35-9b-retry-q8",
+      "cap": 96,
+      "attempts": 420,
+      "maxOutputTokens": 17,
+      "atOrAboveCap": 0,
+      "notCompleteJson": 0
+    },
+    {
+      "report": "v2-validation-val-local-qwen35-08b.json",
+      "split": "validation",
+      "checkpoint": "models/checkpoints/local-v2-08b",
+      "cap": 96,
+      "attempts": 422,
+      "maxOutputTokens": 17,
+      "atOrAboveCap": 0,
+      "notCompleteJson": 0
+    }
+  ]
+}

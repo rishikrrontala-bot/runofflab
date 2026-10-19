@@ -1,0 +1,116 @@
+{
+  "checkedAt": "2026-10-18T02:41:38.240Z",
+  "purpose": "EVAL-CX-009: model_server.py switched from generate() to stream_generate() to report finishReason; outputs must be unchanged.",
+  "checkpoint": "models/checkpoints/merged-v2-qwen35-4b-e6",
+  "generation": {
+    "thinking": "off (enable_thinking=False in the chat template)",
+    "maxTokens": 96,
+    "temperature": 0,
+    "sampler": "greedy (temp 0)",
+    "template": "tokenizer chat template; one user message with the prompt; add_generation_prompt"
+  },
+  "identical": 12,
+  "total": 12,
+  "finishReasons": [
+    "stop"
+  ],
+  "maxOutputTokens": 16,
+  "rows": [
+    {
+      "key": "South loop target · default 60 mm/h, 20 min",
+      "before": "{\"selected_patch_ids\":[\"G7\",\"G8\",\"G12\"]}",
+      "after": "{\"selected_patch_ids\":[\"G7\",\"G8\",\"G12\"]}",
+      "identical": true,
+      "outputTokens": 16,
+      "finishReason": "stop"
+    },
+    {
+      "key": "South loop target · short burst 100 mm/h, 10 min",
+      "before": "{\"selected_patch_ids\":[\"G7\",\"G8\",\"G12\"]}",
+      "after": "{\"selected_patch_ids\":[\"G7\",\"G8\",\"G12\"]}",
+      "identical": true,
+      "outputTokens": 16,
+      "finishReason": "stop"
+    },
+    {
+      "key": "South loop target · long 35 mm/h, 45 min",
+      "before": "{\"selected_patch_ids\":[\"G7\",\"G8\",\"G12\"]}",
+      "after": "{\"selected_patch_ids\":[\"G7\",\"G8\",\"G12\"]}",
+      "identical": true,
+      "outputTokens": 16,
+      "finishReason": "stop"
+    },
+    {
+      "key": "South loop target · wet soil 60 mm/h, 20 min",
+      "before": "{\"selected_patch_ids\":[\"G7\",\"G8\",\"G12\"]}",
+      "after": "{\"selected_patch_ids\":[\"G7\",\"G8\",\"G12\"]}",
+      "identical": true,
+      "outputTokens": 16,
+      "finishReason": "stop"
+    },
+    {
+      "key": "East parking target · default 60 mm/h, 20 min",
+      "before": "{\"selected_patch_ids\":[\"G2\",\"G3\",\"G6\"]}",
+      "after": "{\"selected_patch_ids\":[\"G2\",\"G3\",\"G6\"]}",
+      "identical": true,
+      "outputTokens": 15,
+      "finishReason": "stop"
+    },
+    {
+      "key": "East parking target · short burst 100 mm/h, 10 min",
+      "before": "{\"selected_patch_ids\":[\"G2\",\"G3\",\"G6\"]}",
+      "after": "{\"selected_patch_ids\":[\"G2\",\"G3\",\"G6\"]}",
+      "identical": true,
+      "outputTokens": 15,
+      "finishReason": "stop"
+    },
+    {
+      "key": "East parking target · long 35 mm/h, 45 min",
+      "before": "{\"selected_patch_ids\":[\"G2\",\"G3\",\"G6\"]}",
+      "after": "{\"selected_patch_ids\":[\"G2\",\"G3\",\"G6\"]}",
+      "identical": true,
+      "outputTokens": 15,
+      "finishReason": "stop"
+    },
+    {
+      "key": "East parking target · wet soil 60 mm/h, 20 min",
+      "before": "{\"selected_patch_ids\":[\"G2\",\"G3\",\"G6\"]}",
+      "after": "{\"selected_patch_ids\":[\"G2\",\"G3\",\"G6\"]}",
+      "identical": true,
+      "outputTokens": 15,
+      "finishReason": "stop"
+    },
+    {
+      "key": "North parking target · default 60 mm/h, 20 min",
+      "before": "{\"selected_patch_ids\":[\"G4\",\"G5\",\"G7\"]}",
+      "after": "{\"selected_patch_ids\":[\"G4\",\"G5\",\"G7\"]}",
+      "identical": true,
+      "outputTokens": 15,
+      "finishReason": "stop"
+    },
+    {
+      "key": "North parking target · short burst 100 mm/h, 10 min",
+      "before": "{\"selected_patch_ids\":[\"G4\",\"G5\",\"G7\"]}",
+      "after": "{\"selected_patch_ids\":[\"G4\",\"G5\",\"G7\"]}",
+      "identical": true,
+      "outputTokens": 15,
+      "finishReason": "stop"
+    },
+    {
+      "key": "North parking target · long 35 mm/h, 45 min",
+      "before": "{\"selected_patch_ids\":[\"G4\",\"G5\",\"G7\"]}",
+      "after": "{\"selected_patch_ids\":[\"G4\",\"G5\",\"G7\"]}",
+      "identical": true,
+      "outputTokens": 15,
+      "finishReason": "stop"
+    },
+    {
+      "key": "North parking target · wet soil 60 mm/h, 20 min",
+      "before": "{\"selected_patch_ids\":[\"G4\",\"G5\",\"G7\"]}",
+      "after": "{\"selected_patch_ids\":[\"G4\",\"G5\",\"G7\"]}",
+      "identical": true,
+      "outputTokens": 15,
+      "finishReason": "stop"
+    }
+  ]
+}
