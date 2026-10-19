@@ -4,6 +4,10 @@ This is a factual record. It separates product direction from code authorship an
 
 **Source-export note, October 18, 2026:** Codex prepared submission materials, packaged this source snapshot and adapted its README for independent setup. Application source files were copied without changes. Model weights, generated training rows, provider logs and credentials are omitted; see `SOURCE-EXPORT.json` and `README.md`. The contribution record below describes the original project implementation.
 
+## Submission materials, October 18–19, 2026
+
+At Rishik's request, Codex completed the Devpost draft, prepared and verified the public source export, captured actual public-app runs and saved simulation histories, and assembled the demo video, evidence chart and captions. OpenAI image generation created the RunoffLab logo and submission cover. ElevenLabs generated a stock, third-person synthetic voiceover; it does not impersonate Rishik. These presentation assets do not change the application, measured terrain or simulator results.
+
 ## Who did what
 
 **Rishik Rontala** chose RunoffLab, wrote the product concept and the detailed requirements (the master brief), supplied source leads, set the budget and spending authorization, chose the visual direction, provided the provider accounts and API keys, and directed the work session by session ("continue building and train the model", "use lots of data", "use the best models"). These are substantive product and project contributions.

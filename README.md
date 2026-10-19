@@ -1,5 +1,7 @@
 # RunoffLab
 
+<img src="brand/runofflab-logo.png" alt="RunoffLab" width="440">
+
 Run a hypothetical storm over public LiDAR terrain at Mercer County Park, New Jersey. Place rain gardens on lawn, repeat the same storm, and compare the computed ponding on a paved target. A water balance tracks rainfall, surface water, soil, garden storage, edge outflow and drainage into the lake.
 
 Built by **Rishik Rontala**. Rishik chose the concept, wrote the requirements, supplied source leads, set the budget and visual direction, and directed the project. **AI coding assistants wrote the implementation and documentation.** The detailed contribution record is in [AI-USE.md](AI-USE.md).

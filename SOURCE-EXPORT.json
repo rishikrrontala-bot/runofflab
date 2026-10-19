@@ -11,6 +11,8 @@
     "PRODUCT.md",
     "README.md",
     "SOURCE-EXPORT.json",
+    "brand/runofflab-devpost-cover.png",
+    "brand/runofflab-logo.png",
     "data/derived/park-512m-4m.json",
     "data/derived/park-domain-2m.json",
     "data/families-manifest.json",
@@ -129,7 +131,8 @@
     "Prepared family terrain grids are included because the training-family tests and data generator use them.",
     "Evidence and model-card documents retain the dates and measurements from the original project.",
     "Some historical evidence references describe omitted working artifacts; see README.md for export scope.",
-    "Public DEM use-limitations metadata is preserved under data/source-terms/."
+    "Public DEM use-limitations metadata is preserved under data/source-terms/.",
+    "Logo and cover added October 19; image-generation and narrated-demo contributions are disclosed in AI-USE.md. Application code remains unchanged."
   ],
   "adaptedFiles": [
     "README.md",
@@ -140,5 +143,6 @@
   "generatedFiles": [
     "SOURCE-EXPORT.json",
     "evidence/source-export-checks.md"
-  ]
+  ],
+  "updatedAt": "2026-10-19"
 }
