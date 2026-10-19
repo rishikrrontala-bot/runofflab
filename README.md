@@ -1,10 +1,12 @@
-# RunoffLab (public build)
+# RunoffLab
 
-Live app: https://rishikrrontala-bot.github.io/runofflab/
+[Open the live app](https://rishikrrontala-bot.github.io/runofflab/) · [Browse the source code](https://github.com/rishikrrontala-bot/runofflab/tree/source)
 
-This repository holds only the compiled static website for RunoffLab, a 2026 Congressional App Challenge (NJ-12)
-entry by Rishik Rontala. It runs a hypothetical storm over public NJ LiDAR terrain at Mercer County Park, lets you
-place rain gardens, and reruns the same storm. It is an experiment with stated assumptions, not a flood forecast.
+Run a hypothetical storm over public New Jersey LiDAR terrain at Mercer County Park, place rain gardens, and repeat the same storm to compare modelled ponding. A water balance tracks every destination for the runoff. This is an experiment with stated assumptions, not a flood forecast or an engineering design.
 
-Live trained-model requests are off in this version; the trained model's recorded answers are included and every
-design is simulated in the browser. AI coding assistants wrote the code; the disclosure is part of the submission.
+Built by **Rishik Rontala**. AI coding assistants wrote the implementation under his direction; see the [contribution record](https://github.com/rishikrrontala-bot/runofflab/blob/source/AI-USE.md).
+
+- **`main`** contains the compiled static website used by GitHub Pages.
+- **[`source`](https://github.com/rishikrrontala-bot/runofflab/tree/source)** contains the runnable application, tests, prepared terrain data, training and evaluation tools, evidence reports and limitations. Its README explains setup and the artifacts excluded from the export.
+
+Live trained-model requests are disabled on the public site. Recorded model answers are included, and each proposed design is simulated live in the browser. Model weights and private credentials are not published.
